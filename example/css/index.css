@@ -1,0 +1,14 @@
+section.modal {
+    border: 1px solid red;
+    transition: opacity 1s, transform 1s;
+}
+
+section.modal.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+section.modal:not(.visible) {
+    opacity: 0.5;
+    transform: scale(0.5);
+}
